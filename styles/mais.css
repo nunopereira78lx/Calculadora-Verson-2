@@ -1,0 +1,56 @@
+
+*,*{
+    text-align: center;
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(190, 190, 190);
+    border-radius: 20px;
+}
+
+#contagem {
+    position: absolute;
+    bottom: 0%;
+}
+
+#myInput {
+    padding: 20px;
+    background-color: rgb(219, 219, 250);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+#butt {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 110%;
+    font-family: Verdana, Tahoma, sans-serif;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(59, 59, 59);
+    color:white;
+    cursor: pointer;
+}
+
+li {
+    font-size: 160%;
+    font-family: Verdana, Tahoma, sans-serif;
+    color:#1b1b1b;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(18, 143, 14);
+}
+
+p {
+    font-size: 18px;
+    color: #098751;
+}

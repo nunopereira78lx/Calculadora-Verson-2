@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="scripts/jquery-3.4.1.min.js"></script>  
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+           
+            <h1 class="name">CALCULADORA</h1>
+      
+    </header>
+
+    <form name="calc" class="container">    
+        <input type="text" class="mostrador" name="mostrador">
+  
+        <div class="flex-container">
+            <input type="button" value=" 1 " class="botao" onclick="calc.mostrador.value += '1'" onkeypress="calc.mostrador.value += '1'">
+            <input type="button" value=" 2 " class="botao" onclick="calc.mostrador.value += '2'">
+            <input type="button" value=" 3 " class="botao" onclick="calc.mostrador.value += '3'">
+            <input type="button" value=" 4 " class="botao" onclick="calc.mostrador.value += '4'">
+            <input type="button" value=" 5 " class="botao" onclick="calc.mostrador.value += '5'">
+            <input type="button" value=" 6 " class="botao" onclick="calc.mostrador.value += '6'">
+            <input type="button" value=" 7 " class="botao" onclick="calc.mostrador.value += '7'">
+            <input type="button" value=" 8 " class="botao" onclick="calc.mostrador.value += '8'">
+            <input type="button" value=" 9 " class="botao" onclick="calc.mostrador.value += '9'">
+            <input type="button" value=" 0 " class="botao" onclick="calc.mostrador.value += '0'">
+            <input type="button" value=" + " class="botao" onclick="calc.mostrador.value += '+'">
+            <input type="button" value=" - " class="botao" onclick="calc.mostrador.value += '-'">
+            <input type="button" value=" * " class="botao" onclick="calc.mostrador.value += '*'">
+            <input type="button" value=" / " class="botao" onclick="calc.mostrador.value += '/'">
+            <input type="button" value=" . " class="botao" onclick="calc.mostrador.value += '.'">
+            <input type="button" value=" = " class="botao" onClick="calc.mostrador.value = eval(calc.mostrador.value)">  <!-- EVAL Se o argumento de eval() não é uma string, eval() retorna o argumento inalterado. No exemplo a seguir, o construtor String é especificado, e eval() retorna um objeto String em vez de avaliar a string. -->
+          
+            <input type="button" value=" c " class="botao" onClick="calc.mostrador.value = ''">                                        <!-- EVAL exemplos  -->
+                                                                                                                                <!--   eval(new String("2 + 2")); // retorna um objeto String contendo "2 + 2" -->
+        </div> <!-- End flex-container -->                                                                                        <!--   eval("2 + 2");  // retorna 4 " -->
+    </form>
+
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>
+

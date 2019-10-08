@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+
+*,*:after, *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+.self-clear:before, .self-clear:after{
+    content:"";
+    display:table;
+} 
+
+.self-clear:after{
+    clear: both;
+}
+
+.self-clear{
+    *zoom:1;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+h1{
+    font-family: 'Chilanka', cursive;
+    font-size: 18rem;
+    color: #1c6b02;
+}
+
+h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 6rem;
+    color: #fff;
+}
+
+h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #fff;
+}
+
+h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+}
+
+h5{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #fff;
+}
+
+h6{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+}
+
+p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+/* a{
+    color: rgb(28, 117, 2);
+} */
+
+.container{
+    padding: 30px 20px 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img, video, object{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 30px 20px 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.verMais{
+    font-size:1.6rem;
+    margin: 15px; 
+    margin-left: 90%;
+    border-radius:10%
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.logo{
+    flex: 10%;
+}
+.name{
+    padding-left: 60px;
+    flex: auto;   
+    padding: 0px 20px 0px 20px;
+}
+
+.naveg{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.naveg ul{
+    padding: 0px 20px 30px 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+.naveg li{
+    border-right: 1px solid #1c8d02;
+}
+
+.naveg ul li{
+    padding: 5px 15px;
+}
+
+.naveg li a{
+    font-size: 2.5rem;
+    color:#1c8d02;
+    margin-right: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.naveg li:last-child{
+    border-right: none;
+}
+
+.naveg a.select {
+    background-color: #1c4e02;
+    color: #c2dbbc;
+}
+
+.naveg li a:hover {
+    background-color: #9b3a3a;
+    color: #c2dbbc;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------BIO-INTRO------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bioIntro{
+    flex: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bioIntro h4{
+    color: #deeed9;
+    text-shadow: 2px 2px rgb(0, 0, 0), 3px 3px rgb(55, 99, 35);    
+}
+
+.idade{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #fff;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------AUDIOVISUAL-INTRO------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.audivisualIntro{
+    flex: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#slider{ 
+    width: 1000px;
+    height: 800px;  
+    position: relative;
+    margin: 20px auto;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+}
+
+.prev{
+    padding: 10px;
+    border: none;
+    background: #0b3b00;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 33%;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    opacity: 50%;
+}
+
+.next{
+    padding: 10px;
+    border: none;
+    background: #0b3b00;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 33%;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 968px;
+    opacity: 50%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------WEB-INTRO---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.webIntro{
+    flex: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.logos{
+    width: 600px;
+    height: 400px;  
+    position: relative;
+    margin: auto; 
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------BIOGRAFIA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container-bio{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.item{
+    flex: auto;
+    padding: 10px;
+    color: #fff;
+}
+
+.itemTitle{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    background: #0b3b00;
+}
+
+.texto {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:2rem ;
+    background:  black;
+    color: #fff;
+} 
+
+/*------------------------------------------------------------------------------------------------------------------------------------------AUDIOVISUAL----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#filme{
+    width: 600px;
+    height: auto;  
+    margin: auto;
+    text-align: center;
+}
+
+.listaFilmes{
+    padding: 0px 20px 30px 20px;
+    justify-content: center;
+}
+
+.av{
+    background-color: black;
+    bottom: 10px;
+    color: #1c6b02;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; 
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------WEB------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.trabalhosWeb{
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 8rem;
+    color: #1c6b02;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.traballho{
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color:#1c8d02;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.traballho:hover {
+    color: #771313;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- CONTACTOS ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.contactos{
+    margin: auto;
+    color:#1c8d02;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 3rem;
+}
+
+.info{
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2rem;
+}
+/*------------------------------------------------------------------------------------------------ ------------------------------------- TO DO LIST ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#contagem {
+    position: absolute;
+    bottom: 0%;
+}
+
+#myInput {
+    padding: 20px;
+    background-color: rgb(219, 219, 250);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+#butt {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 110%;
+    font-family: Verdana, Tahoma, sans-serif;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(59, 59, 59);
+    color:white;
+    cursor: pointer;
+}
+
+li {
+    font-size: 160%;
+    font-family: Verdana, Tahoma, sans-serif;
+    color:#ffffff;
+}
+
+.listatarefas {
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 8rem;
+    color: #1c6b02;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #1c6b02;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------CALCULADORA--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.mostrador{
+    width: 50%;
+	height: 70px;
+    text-align: right;
+    padding: 20px;
+    background-color: rgb(219, 219, 250);
+    font-family:'Noto Sans KR', sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.botao{
+    width: 100px;
+	height: 100px;
+	float: left;
+	margin: 5px;
+	box-sizing: border-box;
+    background-color: black;
+    bottom: 10px;
+    color: #1c6b02;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10rem;
+    cursor: pointer; 
+    text-decoration: none;
+    border-radius: 20%;
+    font-size: 4rem;
+    color:#1c8d02;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.botao:hover {
+    background-color: #771313;
+    color: #c2dbbc;
+}
+
+.Apagar{
+    width: 150px;
+}
